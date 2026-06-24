@@ -13,6 +13,7 @@ AstrBot 摸头插件 —— @机器人并发送 `rua`，即可生成摸头GIF动
 | `rua你` / `rua自己` + @机器人 | 机器人摸自己的头像 |
 | `rua他` / `rua她` / `rua它` / `rua一下` + @另一位群员 | 摸摸被 @ 的群员头像 |
 | `rua`（精确匹配）+ @另一位群员 | 摸摸被 @ 的群员头像 |
+| 发送图片/引用图片 + `rua`/`rua这个`/`rua这张图`/`rua这个图`/`rua图片`/`rua它`/`rua图` | 摸摸这张图片 |
 
 同一 QQ 号 2 分钟内仅允许触发一次，超频回复提示。
 
@@ -32,8 +33,9 @@ AstrBot 摸头插件 —— @机器人并发送 `rua`，即可生成摸头GIF动
 
 ## 依赖
 
-- 基于 [UAPI 摸头GIF生成API](https://uapis.cn/docs/api-reference/get-image-motou) 生成动图
-- 无需额外 Python 依赖
+- 基于 [UAPI 摸头GIF生成API](https://uapis.cn/docs/api-reference/get-image-motou) 生成头像动图
+- 基于 [UAPI POST摸头API](https://uapis.cn/docs/api-reference/post-image-motou) 生成图片动图
+- 依赖 `aiohttp`、`Pillow`（通常已随 AstrBot 安装）
 
 ## 更新日志
 

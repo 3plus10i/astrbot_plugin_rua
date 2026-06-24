@@ -1,7 +1,7 @@
 name: astrbot_plugin_rua # 插件唯一识别名，以 astrbot_plugin_ 前缀开头
 display_name: Rua一下头像 # 展示名
 desc: 艾特bot并发送rua，让bot回复一个摸头GIF动图。 # 插件简短描述
-version: v1.3.0 # 插件版本号
+version: v1.4.0 # 插件版本号
 author: 3plus10i # 作者
 repo: https://github.com/3plus10i/astrbot_plugin_rua # 插件的仓库地址
 support_platforms:
