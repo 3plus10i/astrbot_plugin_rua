@@ -4,7 +4,7 @@ from astrbot.api.star import Context, Star, register
 from astrbot.api.message_components import At
 from astrbot.api import logger
 
-@register("astrbot_plugin_rua", "3plus10i", "Rua摸头插件 - @机器人并发送rua即可生成摸头GIF", "1.2.0")
+@register("astrbot_plugin_rua", "3plus10i", "Rua摸头插件 - 发送rua即可生成摸头GIF", "1.2.0")
 class RuaPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
