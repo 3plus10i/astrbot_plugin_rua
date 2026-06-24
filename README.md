@@ -1,14 +1,27 @@
-# astrbot-plugin-helloworld
+# astrbot_plugin_rua
 
-AstrBot 插件模板 / A template plugin for AstrBot plugin feature
+AstrBot 摸头插件 —— @机器人并发送 `rua`，即可生成摸头GIF动图。
 
-> [!NOTE]
-> This repo is just a template of [AstrBot](https://github.com/AstrBotDevs/AstrBot) Plugin.
-> 
-> [AstrBot](https://github.com/AstrBotDevs/AstrBot) is an agentic assistant for both personal and group conversations. It can be deployed across dozens of mainstream instant messaging platforms, including QQ, Telegram, Feishu, DingTalk, Slack, LINE, Discord, Matrix, etc. In addition, it provides a reliable and extensible conversational AI infrastructure for individuals, developers, and teams. Whether you need a personal AI companion, an intelligent customer support agent, an automation assistant, or an enterprise knowledge base, AstrBot enables you to quickly build AI applications directly within your existing messaging workflows.
+## 功能
 
-# Supports
+在群聊或私聊中 @机器人并发送 `rua`，机器人会回复一张摸摸你头像的GIF动图。
 
-- [AstrBot Repo](https://github.com/AstrBotDevs/AstrBot)
-- [AstrBot Plugin Development Docs (Chinese)](https://docs.astrbot.app/dev/star/plugin-new.html)
-- [AstrBot Plugin Development Docs (English)](https://docs.astrbot.app/en/dev/star/plugin-new.html)
+**示例：**
+
+```
+用户：@AstrBot rua
+机器人：[摸头GIF动图]
+```
+
+## 安装
+
+将本插件放入 AstrBot 的插件目录 `data/plugins/astrbot_plugin_rua/` 即可。
+
+## 依赖
+
+- 基于 [UAPI 摸头GIF生成API](https://uapis.cn/docs/api-reference/get-image-motou) 生成动图
+- 无需额外 Python 依赖
+
+## 更新日志
+
+详见 [CHANGELOG.md](./CHANGELOG.md)
