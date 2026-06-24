@@ -4,7 +4,7 @@ from astrbot.api.star import Context, Star, register
 from astrbot.api.message_components import At
 from astrbot.api import logger
 
-@register("astrbot_plugin_rua", "3plus10i", "Rua摸头插件 - @机器人并发送rua即可生成摸头GIF", "1.1.0")
+@register("astrbot_plugin_rua", "3plus10i", "Rua摸头插件 - @机器人并发送rua即可生成摸头GIF", "1.2.0")
 class RuaPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
@@ -24,12 +24,14 @@ class RuaPlugin(Star):
         """监听消息，检测 @bot + rua 并返回摸头GIF"""
         message_str = event.message_str.strip().lower()
 
-        bot_mentioned = any(
-            isinstance(seg, At) and str(seg.qq) == str(event.message_obj.self_id)
-            for seg in event.message_obj.message
-        )
-        if not bot_mentioned:
-            return
+        is_group = hasattr(event.message_obj, 'group_id') and event.message_obj.group_id
+        if is_group:
+            bot_mentioned = any(
+                isinstance(seg, At) and str(seg.qq) == str(event.message_obj.self_id)
+                for seg in event.message_obj.message
+            )
+            if not bot_mentioned:
+                return
 
         # 匹配 rua 模式
         is_self_rua = "rua你" in message_str or "rua自己" in message_str
