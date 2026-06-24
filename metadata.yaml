@@ -1,6 +1,6 @@
 name: astrbot_plugin_rua # 插件唯一识别名，以 astrbot_plugin_ 前缀开头
 display_name: Rua摸头插件 # 展示名
-desc: @机器人并发送rua，即可生成摸头GIF动图。 # 插件简短描述
+desc: 机器人并发送rua，即可生成摸头GIF动图。 # 插件简短描述
 version: v1.0.0 # 插件版本号
 author: 3plus10i # 作者
 repo: https://github.com/3plus10i/astrbot_plugin_rua # 插件的仓库地址
